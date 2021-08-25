@@ -6,7 +6,7 @@
 /*   By: gsiddiqu <gsiddiqu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/14 17:38:19 by gsiddiqu          #+#    #+#             */
-/*   Updated: 2021/08/19 17:00:28 by gsiddiqu         ###   ########.fr       */
+/*   Updated: 2021/08/25 17:05:01 by gsiddiqu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,5 @@
 # include <signal.h>
 # include <limits.h>
 # include "libft/libft.h"
-
-
 
 #endif

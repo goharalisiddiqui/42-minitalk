@@ -6,7 +6,7 @@
 /*   By: gsiddiqu <gsiddiqu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 13:00:01 by gsiddiqu          #+#    #+#             */
-/*   Updated: 2021/08/16 14:43:13 by gsiddiqu         ###   ########.fr       */
+/*   Updated: 2021/08/25 17:14:27 by gsiddiqu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,7 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }	t_list;
-	
-	
+
 void		ft_putchar_fd(char c, int fd);
 void		ft_putstr_fd(char *s, int fd);
 void		ft_putendl_fd(char *s, int fd);

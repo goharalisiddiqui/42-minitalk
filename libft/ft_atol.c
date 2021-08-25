@@ -6,7 +6,7 @@
 /*   By: gsiddiqu <gsiddiqu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/17 12:46:01 by gsiddiqu          #+#    #+#             */
-/*   Updated: 2021/08/11 19:06:23 by gsiddiqu         ###   ########.fr       */
+/*   Updated: 2021/08/25 17:14:01 by gsiddiqu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ long long	ft_atol(char *str)
 	if ((sign == -1) && (ft_strncmp(str, "9223372036854775808", 20) == 0))
 		return (-9223372036854775807 - 1);
 	digits = ft_atol_digits(str);
-	if (digits < 0)	
+	if (digits < 0)
 	{
 		if (sign == 1)
 			return (-1);

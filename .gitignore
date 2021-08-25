@@ -1,3 +1,5 @@
 *.txt
 client
 server
+*.a
+*.o

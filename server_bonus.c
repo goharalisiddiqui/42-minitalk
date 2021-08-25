@@ -6,7 +6,7 @@
 /*   By: gsiddiqu <gsiddiqu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/17 15:44:20 by gsiddiqu          #+#    #+#             */
-/*   Updated: 2021/08/25 16:22:34 by gsiddiqu         ###   ########.fr       */
+/*   Updated: 2021/08/25 17:13:05 by gsiddiqu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	handler_func(int sig, siginfo_t *info, void *ucontext)
 {
-	static char c;
+	static char	c;
 	static char	n = '\x01';
 
 	if (sig == SIGUSR2)
@@ -35,7 +35,7 @@ void	handler_func(int sig, siginfo_t *info, void *ucontext)
 
 int	main(void)
 {
-	struct sigaction sa;
+	struct sigaction	sa;
 
 	sa.sa_sigaction = &handler_func;
 	sa.sa_flags = SA_SIGINFO;

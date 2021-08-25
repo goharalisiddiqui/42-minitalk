@@ -6,7 +6,7 @@
 /*   By: gsiddiqu <gsiddiqu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/16 18:51:58 by gsiddiqu          #+#    #+#             */
-/*   Updated: 2021/08/19 16:04:46 by gsiddiqu         ###   ########.fr       */
+/*   Updated: 2021/08/25 17:03:02 by gsiddiqu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,8 @@ int	main(int argc, char **argv)
 	int		ind;
 	int		i;
 	char	c;
-	int 	size;
+	int		size;
 
-	time_t begin = time(NULL);
 	if (argc != 3)
 		return (1);
 	ind = -1;
@@ -39,8 +38,5 @@ int	main(int argc, char **argv)
 			usleep(40);
 		}
 	}
-	time_t end = time(NULL);
-	printf("The elapsed time is %ld seconds chars per sec = %ld", (end - begin), size/(end - begin));
 	return (0);
 }
-
