@@ -6,12 +6,11 @@
 /*   By: gsiddiqu <gsiddiqu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/17 15:44:20 by gsiddiqu          #+#    #+#             */
-/*   Updated: 2021/08/19 19:55:39 by gsiddiqu         ###   ########.fr       */
+/*   Updated: 2021/08/25 16:22:34 by gsiddiqu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "server_bonus.h"
-#include <errno.h>
 
 void	handler_func(int sig, siginfo_t *info, void *ucontext)
 {
