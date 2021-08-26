@@ -6,7 +6,7 @@
 /*   By: gsiddiqu <gsiddiqu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/17 15:44:20 by gsiddiqu          #+#    #+#             */
-/*   Updated: 2021/08/25 17:13:05 by gsiddiqu         ###   ########.fr       */
+/*   Updated: 2021/08/26 15:34:09 by gsiddiqu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	handler_func(int sig, siginfo_t *info, void *ucontext)
 	}
 	else
 		n = n << 1;
-	usleep(25);
+	usleep(40);
 	kill(info->si_pid, SIGUSR1);
 }
 

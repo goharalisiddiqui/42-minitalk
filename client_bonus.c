@@ -6,7 +6,7 @@
 /*   By: gsiddiqu <gsiddiqu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/16 18:51:58 by gsiddiqu          #+#    #+#             */
-/*   Updated: 2021/08/25 17:12:35 by gsiddiqu         ###   ########.fr       */
+/*   Updated: 2021/08/26 15:34:02 by gsiddiqu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	sendchar(char c, int pid)
 	i = 0;
 	while (i < 8)
 	{
-		usleep(25);
+		usleep(40);
 		if (c & '\x01')
 			kill(pid, SIGUSR2);
 		else
