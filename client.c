@@ -6,7 +6,7 @@
 /*   By: gsiddiqu <gsiddiqu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/16 18:51:58 by gsiddiqu          #+#    #+#             */
-/*   Updated: 2021/08/25 17:03:02 by gsiddiqu         ###   ########.fr       */
+/*   Updated: 2021/08/26 14:43:03 by gsiddiqu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	main(int argc, char **argv)
 				kill(atoi(argv[1]), SIGUSR1);
 			c = c >> 1;
 			i++;
-			usleep(40);
+			usleep(80);
 		}
 	}
 	return (0);
