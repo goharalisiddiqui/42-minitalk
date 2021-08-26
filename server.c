@@ -6,7 +6,7 @@
 /*   By: gsiddiqu <gsiddiqu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/17 15:44:20 by gsiddiqu          #+#    #+#             */
-/*   Updated: 2021/08/25 17:03:47 by gsiddiqu         ###   ########.fr       */
+/*   Updated: 2021/08/26 14:54:36 by gsiddiqu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ void	handler_func(int sig)
 
 	if (sig == SIGUSR2)
 		c = c ^ n;
+	n = n << 1;
 	if (n < 0)
 	{
 		if (c == '\0')
@@ -26,9 +27,7 @@ void	handler_func(int sig)
 		write(1, &c, 1);
 		n = '\x01';
 		c = 0;
-	}
-	else
-		n = n << 1;
+	}	
 }
 
 int	main(void)

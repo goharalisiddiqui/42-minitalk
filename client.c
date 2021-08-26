@@ -6,7 +6,7 @@
 /*   By: gsiddiqu <gsiddiqu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/16 18:51:58 by gsiddiqu          #+#    #+#             */
-/*   Updated: 2021/08/26 14:43:03 by gsiddiqu         ###   ########.fr       */
+/*   Updated: 2021/08/26 14:55:52 by gsiddiqu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	main(int argc, char **argv)
 	{
 		i = 0;
 		c = argv[2][ind];
-		while (i < 8)
+		while (i < 7)
 		{
 			if (c & '\x01')
 				kill(atoi(argv[1]), SIGUSR2);
@@ -35,7 +35,7 @@ int	main(int argc, char **argv)
 				kill(atoi(argv[1]), SIGUSR1);
 			c = c >> 1;
 			i++;
-			usleep(80);
+			usleep(40);
 		}
 	}
 	return (0);
